@@ -6,12 +6,9 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('section').forEach(sec => observer.observe(sec));
 
-// Select the curve and milestones
-const path = document.getElementById("curvePath");
-const milestones = document.querySelectorAll(".milestone");
+// Select the curve and milestone
 
 // Get total path length
-const pathLength = path.getTotalLength();
 
 // Place milestones evenly along the curve
 milestones.forEach((circle, i) => {
